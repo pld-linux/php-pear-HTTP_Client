@@ -30,7 +30,7 @@ Features:
 - implements the Subject-Observer design pattern: the base class sends
   events to listeners that do the response processing
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Za pomoc± tej klasy mo¿na w ³atwy sposób wykonaæ wiele zapytañ HTTP i
