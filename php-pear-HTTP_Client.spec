@@ -1,5 +1,3 @@
-# ToDo:
-# - fix pl description (last feature)
 %include	/usr/lib/rpm/macros.php
 %define         _class          HTTP
 %define         _subclass       Client
@@ -28,7 +26,7 @@ Features:
 - handles HTTP redirection
 - has methods to set default headers and request parameters
 - implements the Subject-Observer design pattern: the base class sends
-  events to listeners that do the respons processing
+  events to listeners that do the response processing
 
 This class has in PEAR status: %{_status}.
 
@@ -36,9 +34,12 @@ This class has in PEAR status: %{_status}.
 Za pomoc± tej klasy mo¿na w ³atwy sposób wykonaæ wiele zapytañ HTTP i
 przetworzyæ otrzymane wyniki.
 Mo¿liwo¶ci:
-- zarz±dzanie cookies i referrers pomiêdzy zapytaniami
-- obs³uguje przekierowania HTTP
-- posiada metody do ustawiania domy¶lnych parametrów nag³ówków i zapytañ
+- zarz±dzanie ciasteczkami (cookies) i ¼ród³ami odwo³añ (referrers)
+  pomiêdzy zapytaniami
+- obs³uga przekierowañ HTTP
+- metody do ustawiania domy¶lnych parametrów nag³ówków i zapytañ
+- implementacja idei projektowej Subject-Observer - klasa bazowa
+  wysy³a zdarzenia do nas³uchuj±cych, które przetwarzaj± te dane.
 
 Ta klasa ma w PEAR status: %{_status}.
 
