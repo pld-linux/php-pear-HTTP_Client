@@ -8,12 +8,11 @@ Summary:	%{_pearname} - easy way to perform multiple HTTP requests
 Summary(pl):	%{_pearname} - ³atwe zarz±dzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-%define _pre	beta1
-Release:	0.%{_pre}
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_pre}.tgz
-# Source0-md5:	13221504ce664055e7572ed935a80ca9
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	4ae6973a6a3663abd9cdbe28ccaacdb4
 URL:		http://pear.php.net/package/HTTP_Client/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -46,21 +45,21 @@ Mo¿liwo¶ci:
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c -n %{name}-%{version}%{_pre}
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/{,%{_subclass}}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
-install %{_pearname}-%{version}%{_pre}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}%{_pre}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
+install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}%{_pre}/examples/*
+%doc %{_pearname}-%{version}/examples/*
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
