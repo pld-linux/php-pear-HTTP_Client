@@ -3,15 +3,16 @@
 %define         _subclass       Client
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
+
 Summary:	%{_pearname} - Easy way to perform multiple HTTP requests
 Summary(pl):	%{_pearname} - £atwe zarz±dzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
-Version:	0.1
+Version:	0.2
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	4c7743632dd13cd9c5086bf25345a590
+# Source0-md5:	67676c8a383c9facca9745a6459f66b2
 URL:		http://pear.php.net/package/HTTP_Client/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
