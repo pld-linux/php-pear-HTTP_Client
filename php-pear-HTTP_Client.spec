@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This class provides an easy way to perform multiple HTTP requests and
-process their resulsts. 
+process their resulsts.
 Features:
 - manage cookies and referrers between requests
 - handles HTTP redirection
