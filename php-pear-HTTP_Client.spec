@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          HTTP
-%define         _subclass       Client
+%define		_class		HTTP
+%define		_subclass	Client
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Easy way to perform multiple HTTP requests
-Summary(pl):	%{_pearname} - £atwe zarz±dzanie wieloma zapytaniami HTTP
+Summary:	%{_pearname} - easy way to perform multiple HTTP requests
+Summary(pl):	%{_pearname} - ³atwe zarz±dzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
 Version:	0.2
 Release:	1
