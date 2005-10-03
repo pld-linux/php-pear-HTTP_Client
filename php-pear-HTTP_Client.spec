@@ -1,14 +1,14 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTTP
 %define		_subclass	Client
-%define		_status		beta
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - easy way to perform multiple HTTP requests
 Summary(pl):	%{_pearname} - ³atwe zarz±dzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	2.2
+Release:	2.3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
