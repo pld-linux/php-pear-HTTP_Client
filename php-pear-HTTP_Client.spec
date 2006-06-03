@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - easy way to perform multiple HTTP requests
 Summary(pl):	%{_pearname} - ³atwe zarz±dzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
-Version:	1.0.0
-Release:	3
+Version:	1.1.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	4ae6973a6a3663abd9cdbe28ccaacdb4
+# Source0-md5:	2067402dfaf521a3ae2e3fa7acf79186
 URL:		http://pear.php.net/package/HTTP_Client/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
