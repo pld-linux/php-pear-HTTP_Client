@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - easy way to perform multiple HTTP requests
-Summary(pl):	%{_pearname} - ³atwe zarz±dzanie wieloma zapytaniami HTTP
+Summary(pl.UTF-8):   %{_pearname} - Å‚atwe zarzÄ…dzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
 Release:	1
@@ -34,16 +34,16 @@ Features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Za pomoc± tej klasy mo¿na w ³atwy sposób wykonaæ wiele zapytañ HTTP i
-przetworzyæ otrzymane wyniki.
-Mo¿liwo¶ci:
-- zarz±dzanie ciasteczkami (cookies) i ¼ród³ami odwo³añ (referrers)
-  pomiêdzy zapytaniami
-- obs³uga przekierowañ HTTP
-- metody do ustawiania domy¶lnych parametrów nag³ówków i zapytañ
+%description -l pl.UTF-8
+Za pomocÄ… tej klasy moÅ¼na w Å‚atwy sposÃ³b wykonaÄ‡ wiele zapytaÅ„ HTTP i
+przetworzyÄ‡ otrzymane wyniki.
+MoÅ¼liwoÅ›ci:
+- zarzÄ…dzanie ciasteczkami (cookies) i ÅºrÃ³dÅ‚ami odwoÅ‚aÅ„ (referrers)
+  pomiÄ™dzy zapytaniami
+- obsÅ‚uga przekierowaÅ„ HTTP
+- metody do ustawiania domyÅ›lnych parametrÃ³w nagÅ‚Ã³wkÃ³w i zapytaÅ„
 - implementacja idei projektowej Subject-Observer - klasa bazowa
-  wysy³a zdarzenia do nas³uchuj±cych, które przetwarzaj± te dane.
+  wysyÅ‚a zdarzenia do nasÅ‚uchujÄ…cych, ktÃ³re przetwarzajÄ… te dane.
 
 Ta klasa ma w PEAR status: %{_status}.
 
