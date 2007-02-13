@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - easy way to perform multiple HTTP requests
-Summary(pl.UTF-8):   %{_pearname} - łatwe zarządzanie wieloma zapytaniami HTTP
+Summary(pl.UTF-8):	%{_pearname} - łatwe zarządzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
 Release:	1
