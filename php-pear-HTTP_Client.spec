@@ -3,29 +3,27 @@
 %define		_subclass	Client
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - easy way to perform multiple HTTP requests
 Summary(pl.UTF-8):	%{_pearname} - łatwe zarządzanie wieloma zapytaniami HTTP
 Name:		php-pear-%{_pearname}
 Version:	1.2.1
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	a0fa394e9c88d4932bb96f0b131f4b39
 URL:		http://pear.php.net/package/HTTP_Client/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.3
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
-Requires:	php-pear-HTTP_Request >= 1.2
+Requires:	php-pear-HTTP_Request >= 1.4.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This class provides an easy way to perform multiple HTTP requests and
-process their resulsts.
-Features:
+process their resulsts. Features:
 - manage cookies and referrers between requests
 - handles HTTP redirection
 - has methods to set default headers and request parameters
@@ -36,8 +34,7 @@ In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
 Za pomocą tej klasy można w łatwy sposób wykonać wiele zapytań HTTP i
-przetworzyć otrzymane wyniki.
-Możliwości:
+przetworzyć otrzymane wyniki. Możliwości:
 - zarządzanie ciasteczkami (cookies) i źródłami odwołań (referrers)
   pomiędzy zapytaniami
 - obsługa przekierowań HTTP
