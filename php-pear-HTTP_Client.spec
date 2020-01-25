@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_class		HTTP
 %define		_subclass	Client
 %define		_status		stable
